@@ -20,9 +20,9 @@ function calculateResults(){
     const totalInterest = document.getElementById('total-interest');
 
     //calculations
-    const fullPayment = parseFloat(amount.value * (1 + ((interest.value / 100) * years.value)));
-    const fullInterest = parseFloat(fullPayment - amount.value);
-    const monthly = parseFloat(fullPayment / (years.value * 12));
+    const fullPayment = "$" + parseFloat(amount.value * (1 + ((interest.value / 100) * years.value)));
+    const fullInterest = "$" + parseFloat(fullPayment - amount.value);
+    const monthly = "$" + parseFloat(fullPayment / (years.value * 12));
 
     if(isFinite(monthly))
     {
